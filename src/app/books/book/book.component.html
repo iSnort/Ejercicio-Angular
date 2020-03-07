@@ -1,0 +1,32 @@
+<div class="container p-5">
+    <div class="card-deck">
+        <div *ngFor="let book of Books">
+            <!-- Card -->
+            <mdb-card>
+                <div class="view overlay waves-light" mdbWavesEffect>
+                    <!-- Card img -->
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+                    </mdb-card-img>
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--Card content-->
+                <mdb-card-body>
+                    <!--Title-->
+                    <mdb-card-title>
+                        <h4>{{ book.title }}</h4>
+                    </mdb-card-title>
+    
+                    <!--Text-->
+                    <mdb-card-text>
+                        {{ book.description }}
+                    </mdb-card-text>
+    
+                    <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+                </mdb-card-body>
+            </mdb-card>
+            <!-- Card -->
+        </div>
+    </div>
+</div>

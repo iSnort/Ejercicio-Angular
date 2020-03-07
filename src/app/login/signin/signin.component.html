@@ -1,0 +1,98 @@
+<!-- Card -->
+
+<div class="container mt-5 col-4 alto">
+
+    <!-- Default form login -->
+    <form class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Iniciar</p>
+
+        <!-- Email -->
+        <input [(ngModel)]="email" name="email" type="email" id="Email" class="form-control mb-4" placeholder="E-mail">
+
+        <!-- Password -->
+        <input [(ngModel)]="password" name="password" type="password" id="Password" class="form-control mb-4" placeholder="Password">
+
+        <div class="d-flex justify-content-around">
+            <div>
+                <!-- Remember me -->
+                <mdb-checkbox [default]="true">Recuerdame</mdb-checkbox>
+            </div>
+            <div>
+                <!-- Forgot password -->
+                <a href="">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+
+        <!-- Sign in button -->
+        <button (click)="onClick($event)" mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
+
+        <!-- Register -->
+        <p>¿No estás registrado aún?
+            <a href="http://localhost:4200/signup">Registrarse</a>
+        </p>
+
+        <!-- Social login -->
+        <p>o inicie con:</p>
+
+        <a type="button" class="light-blue-text mx-2">
+            <mdb-icon fab icon="facebook"></mdb-icon>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+            <mdb-icon fab icon="twitter"></mdb-icon>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+            <mdb-icon fab icon="linkedin"></mdb-icon>
+        </a>
+        <a type="button" class="light-blue-text mx-2">
+            <mdb-icon fab icon="github"></mdb-icon>
+        </a>
+
+    </form>
+    <!-- Default form login -->
+
+</div>
+<!-- <div class="alto container d-flex justify-content-center  ">
+ 
+     <form class="align-self-center p-5 border">
+         <div class="form-group">
+             <div class="col-12 my-5">
+                 <label class="sr-only" for="validationServer01">Username</label>
+                 <div class="input-group">
+                     <div class="input-group-prepend">
+                         <div class="input-group-text">@</div>
+                     </div>
+                     <input [(ngModel)]="Username" name="user" type="text" class="form-control is-valid"
+                         id="validationServer01" value="Mark" placeholder="Usuario" required>
+                     <div class="valid-feedback">
+                   Ingrese usuario
+                     </div>
+                 </div>
+ 
+ 
+             </div>
+ 
+             <div class="col-12 my-5">
+                 <label class="sr-only" for="validationServer01">clave</label>
+                 <div class="input-group">
+                     <div class="input-group-prepend">
+                         <div class="input-group-text">@</div>
+                     </div>
+                     <input [(ngModel)]="clave" name="clave" type="text" class="form-control is-valid"
+                         id="validationServer01" value="Mark" placeholder="clave" required>
+                     <div class="valid-feedback">
+                        Igrese la contraseña
+                     </div>
+                 </div>
+ 
+ 
+             </div>
+ 
+         </div>
+  
+         <button class="btn btn-primary d-block m-auto" type="submit">enviar</button>
+     </form>
+ 
+ 
+ 
+ </div> -->
