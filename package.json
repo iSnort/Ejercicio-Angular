@@ -24,7 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^6.0.0",
     "angular-bootstrap-md": "8.10.1",
     "axios": "^0.19.2",
-    "chart.js": "^2.5.0",
+    "chart.js": "^2.9.4",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
